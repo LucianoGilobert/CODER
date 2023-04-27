@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #cbcdd3;
+    background-color: #ffffff;
 }
 
 /* Estilos generales para el header */
@@ -26,11 +26,11 @@ body {
 
 /* Estilos para el título */
 .home__h1 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: 0;
     margin-left: 1rem;
     text-transform: uppercase;
-    color: azure;
+    color: black;
 }
 
 /* Estilos para el logo */
@@ -45,8 +45,7 @@ body {
 .home {
     background-image: url(Media/home.jpg);
     background-repeat: no-repeat;
-    background-position: 1rem;
-    background-position-x: 0rem;
+    background-position: center;
     background-size: cover;
     height: 45rem;
     display: flex;
@@ -56,6 +55,7 @@ body {
 
 .phrase {
     font-size: 3vw;
+    text-align: center;
     color: whitesmoke;
     font-family: 'Delicious Handrawn', cursive;
 }
@@ -71,16 +71,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     color: whitesmoke;
+}
+
+.nosotros__main h2{
+    color: black;
+}
+
+.nosotros__main{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #777777;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nosotros__h{
     font-size: 5vw;
 }
 
+.nosotros__p {
+    font-weight: bold;
+    text-align: center;
+    width: 75%;
+    font-size: 1vw;
+}
+
 .nosotros__h2 {
-    margin-left: 50rem;
-    margin-top: 5rem;
+    font-size: 2vw;
 }
 
 /* Estilos para Soluciones */
@@ -108,13 +129,9 @@ body {
     grid-template-rows: repeat(3, 5rem);
 }
 
-.servicios div {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
 .servicios__h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -140,25 +157,43 @@ body {
 
 /* Estilo para Contacto */
 .contacto {
-    background-color: rgb(201, 222, 241);
+    background-color: #a29f9f;
+    margin-top: 10rem;
+    height: 50rem;
+}
+
+.contacto__map{
+    border-radius: 4px;
+    border: 2px solid black;
 }
 
 .contacto__h1 {
-    margin-left: 50%;
-    margin-bottom: 15rem;
-    margin-top: 10rem;
-}
-
-.contacto__map {
-    float: right;
-    margin-top: -14rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo de Footer */
 .footer {
+    background-color: #2a2a2a;
     margin-top: 10rem;
 }
 
+.footer__p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer__ul{
+    margin: 0 10px;
+    list-style: none;
+}
+
 .footer__img {
-    width: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 2vw;
 }

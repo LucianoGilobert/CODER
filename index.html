@@ -59,17 +59,18 @@
     <div id="nosotros" class="nosotros">
         <h2 class="nosotros__h">¿Quienes Somos?</h2>
     </div>
-    <dir>
+    <did class="nosotros__main">
         <p class="nosotros__p">Somos un Estudio Jurídico Integral conformado por el Dr. Gabriel Lentini y la Dra.
             Ángeles Mandarino cuyo principal objetivo es otorgar la mejor y más eficiente atención a sus necesidades
             jurídicas, en todas las áreas del derecho, entre ellas: Derecho Civil, Derecho de Familia, Derecho
             Laboral, Derecho de Defensa del Consumidor, Derecho Administrativo, Derecho Penal.
         </p>
         <h2 class="nosotros__h2">¿Que te Ofrecemos?</h2>
-        <p>Nuestra principal función es brindar asesoramiento, acompañamiento y representación en forma judicial y
+        <p class="nosotros__p">Nuestra principal función es brindar asesoramiento, acompañamiento y representación en
+            forma judicial y
             extrajudicial en los distintos procesos.
         </p>
-    </dir>
+    </did>
     <!------------------>
     <!--Servicios-->
     <section class="servicios__h1">
@@ -154,47 +155,65 @@
     <!------------------>
     <!--Formulario de Contacto-->
     <div class="contacto">
-        <section class="contacto__h1">
-            <h1 id="contacto">Contacto</h1>
-        </section>
-        <section class="contacto__map">
+        <h1 class="contacto__h1" id="contacto">Contacto</h1>
+        <section class="row" class="contacto__map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746.432101204933!2d-68.80575690789384!3d-32.86202246542985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0f61334c74e7%3A0xb2e9d3cbe5ba368!2sDespensa%20Mylu%20fianmdres%20gaseosas!5e0!3m2!1ses-419!2sar!4v1679944832895!5m2!1ses-419!2sar"
                 width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="contato__imput">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required><br>
-            <label for="numero">Número:</label>
-            <input type="tel" id="numero" name="numero" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="consulta">Consulta:</label><br>
-            <textarea class="contacto__textarea" id="consulta" name="consulta" required></textarea><br>
-            <input type="submit" value="Enviar">
+        <section class="row g-3 mt-3">
+            <div class="col-6">
+                <label for="dateinput" class="form-label">Nombre y Apellido</label>
+                <input type="Emai" class="form-control" id="dateinput">
+            </div>
+            <div class="col-6">
+                <label for="emailinput" class="form-label">Email</label>
+                <input type="Email" class="form-control" id="emailinput">
+            </div>
+            <div class="col-6">
+                <label for="numbertinput" class="form-label">Celular</label>
+                <input type="Email" class="form-control" id="numbertinput">
+            </div>
+            <div class="col-6">
+                <label for="subjectinput" class="form-label">Asunto</label>
+                <input type="Email" class="form-control" id="subjectinput" placeholder="Asunto.">
+            </div>
+            <div class="col-12">
+                <label for="msjinput" class="form-label">Mensaje</label>
+                <input type="Mensaje" class="form-control" id="msjinput" p>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </section>
     </div>
 
     <!------------------>
     <!--Footer-->
     <footer class="footer">
-        <ul>
-            <li>
-                <img class="footer__img" src="Media/Facebook Icon.png" alt="Facebook icon">
-                <a href="">Facebook</a>
-            </li>
-            <li>
-                <img class="footer__img" src="Media/Instagram icono.jpg" alt="Instagram icon">
-                <a href="">Instagram</a>
-            </li>
-            <li>
-                <img class="footer__img" src="Media/linkedin icon.png" alt="linkedin icon">
-                <a href="">Linkedin</a>
-            </li>
-        </ul>
+        <div>
+            <ul class="footer__ul">
+                <li>
+                    <img class="footer__img" src="Media/Facebook Icon.png" alt="Facebook icon">
+                    <a href="">Facebook</a>
+                </li>
+                <li>
+                    <img class="footer__img" src="Media/instagram icon.png" alt="Instagram icon">
+                    <a href="">Instagram</a>
+                </li>
+                <li>
+                    <img class="footer__img" src="Media/linkedin icon.png" alt="linkedin icon">
+                    <a href="">Linkedin</a>
+                </li>
+                <li>
+                    <img class="footer__img" src="Media/whatsapp icon.png" alt="whatsapp icon"><a href="">whatsapp</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__p">
+            <p>Copyright © 2020 L.M Abogados | Luciano Gilobert Web Design</p>
+        </div>
     </footer>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
