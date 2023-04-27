@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+#pagesfix footer{
+    margin-top: 45%;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -179,6 +183,7 @@ body {
 .footer {
     background-color: #2a2a2a;
     margin-top: 10rem;
+    
 }
 
 .footer__p{
@@ -226,3 +231,4 @@ body {
     list-style: decimal;
 
 }
+
