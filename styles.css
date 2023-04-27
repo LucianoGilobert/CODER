@@ -197,3 +197,32 @@ body {
     margin-right: 1rem;
     width: 2vw;
 }
+
+/* Estilos para las Pages */
+.pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+}
+
+.pages__img{
+    margin-top: 40%;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.pages__h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3vw;
+    text-align: center;
+    color: black;
+}
+
+.pages__ul{
+    padding-left: 30%;
+    text-align: start;
+    list-style: decimal;
+
+}
