@@ -19,7 +19,6 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 3vw;
 }
 
 .header__container {
@@ -43,6 +42,12 @@ body {
     }
 }
 
+@media (max-width: 478px){
+    .home__h1 {
+        font-size: 1.2em;
+    }
+}
+
 /* Estilos para el logo */
 .header__img {
     height: 2rem;
@@ -62,8 +67,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .phrase {
     font-size: 3vw;
@@ -99,7 +102,6 @@ body {
 
 .nosotros__main{
     margin-top: 5rem;
-    margin-bottom: 5rem;
     color: #777777;
     background-color: #fff;
     display: flex;
@@ -119,6 +121,8 @@ body {
 }
 
 .nosotros__h2 {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
     font-size: 2vw;
 }
 
@@ -132,44 +136,164 @@ body {
     }
 }
 
-/* Estilos para Soluciones */
+@media (max-width: 478px){
+    .nosotros__h{
+        font-size: 2.5rem;
+    }
+}
+/* Estilos para Servicios */
 
 .servicios__container {
     display: grid;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(6,5% 37% 5% 5% 37% 5%);
+    grid-template-rows: repeat(11,25rem 10rem 25rem 10rem 25rem 10rem 25rem 10rem 25rem 10rem 25rem);
+    height: 210rem;
 }
 
-.servicios__item {
-    display: grid;
-    grid-template-columns: repeat(3, 7.5rem);
-    grid-template-rows: repeat(3, 5rem);
+.servicios__h2__container{
+    width: 75rem;
+    margin: 0 auto;
+    max-width: 90%;
 }
-
-.servicios__h1 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.servicios__h2 {
+    padding: 1.5rem;
+    border-top: 0.1rem solid #8c8c8c;
+    border-bottom: 0.1rem solid #8c8c8c;
     display: flex;
     justify-content: center;
+    font-size: 2vw;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
+.servicios__item1, .servicios__item2, .servicios__item3, .servicios__item4, .servicios__item5, .servicios__item6 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 0.6rem groove #909494;
+    box-shadow: 0.5rem 0.5rem 0.5rem #8c8c8c;
+}
+
+.servicios__item1 {
+    grid-column: 2 / 3;
+}
+
+.servicios__item2 {
+    grid-row: 3;
+    grid-column: 5 / 6;
+} 
+
+.servicios__item3 {
+    grid-row: 5;
+    grid-column: 2 / 3;
+} 
+
+.servicios__item4 {
+    grid-row: 7;
+    grid-column: 5 / 6;
+}
+
+.servicios__item5 {
+    grid-row: 9;
+    grid-column: 2 / 3;
+} 
+
+.servicios__item6 {
+    grid-row: 11;
+    grid-column: 5 / 6;
+} 
+
 .servicios__img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 4px;
-    border: solid black;
-    background-image: url(Media/Civil.jpg);
-    grid-row: 2 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    grid-row: 1 / 4;
     grid-column: 1 / 2;
 }
 
-.servicios__h2 {
-    font-size: 1.2rem;
-    text-align: center;
+.servicios__h3 {
+    margin: 0.7rem;
+    border: 0.5rem solid #e2e3e7;
+    box-shadow: 0.3rem 0.3rem #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.servicios__h3 a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black
+}
+
+.servicios__ul {
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.servicios__ul li{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.servicios__h3 a:hover{
+    
 }
 
 .servicios__p {
     font-size: 150%;
+}
+
+@media (max-width: 1500px) {
+    .servicios__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .servicios__item1, .servicios__item2, .servicios__item3, .servicios__item4, .servicios__item5, .servicios__item6 {
+        width: 35rem;
+        margin: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios__item1, .servicios__item2, .servicios__item3, .servicios__item4, .servicios__item5, .servicios__item6{
+        width: 25rem;
+        margin: 5rem;
+    }
+
+    .servicios__img{
+        object-fit:fill;
+    }
+
+    .servicios__h3 a{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 478px) {
+    .servicios__item1, .servicios__item2, .servicios__item3, .servicios__item4, .servicios__item5, .servicios__item6 {
+        width: 20rem;
+        height: 23rem;
+        margin: 2rem;
+    }
+
+    .servicios__h2{
+        font-size: 1.5rem;
+    }
+
+    .servicios__ul li{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
 }
 
 /* Estilo para Contacto */
