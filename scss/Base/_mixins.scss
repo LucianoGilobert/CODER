@@ -1,0 +1,11 @@
+@mixin display-flex ($justy-content, $align-items){
+    display: flex;
+    justify-content: $justy-content;
+    align-items: $align-items;
+}
+
+@mixin display-grid ($columns, $rows){
+    display: grid;
+    grid-template-columns: repeat($columns);
+    grid-template-rows: repeat($rows);
+}

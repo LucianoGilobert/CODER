@@ -1,0 +1,28 @@
+@import "../Base/extends";
+@import "../Base/mixins";
+@import "../Base/listas";
+@import "../Base/variables";
+
+/* Contacto */
+
+.contacto{
+    background-color: nth($colores, 9);
+    margin-top: 10rem;
+    height: 50rem;
+
+    .contacto__h2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        @extend %display-flex;
+    }
+
+    .contacto__map__container {
+
+        @extend %display-flex;
+        .contacto__map {
+            border-radius: 25px;
+            height: 20rem;
+            width: 95%;
+        }
+    }
+}

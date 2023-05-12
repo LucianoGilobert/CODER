@@ -1,0 +1,56 @@
+@import "../Base/extends";
+@import "../Base/mixins";
+@import "../Base/listas";
+@import "../Base/variables";
+
+/* Nosotros */
+
+.nosotros {
+    @extend %display-flex;
+    margin-top: 10rem;
+    height: 15rem;
+    background-image: url(../media/dos-abogados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: nth($colores, 2);
+
+    .nosotros__h{
+        font-size: 3rem;
+
+        @include movile {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.nosotros__main {
+    margin-top: 5rem;
+    color: nth($colores, 3);
+    background-color: nth($colores, 4);
+    @extend %display-flex;
+    flex-direction: column;
+
+    h2 {
+        color: nth($colores, 1);
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+        font-size: $size-h2;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    .nosotros__p{
+        font-weight: bold;
+        text-align: center;
+        width: 75%;
+        font-size: 1rem;
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
+    }
+}

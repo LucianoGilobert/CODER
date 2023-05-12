@@ -1,0 +1,35 @@
+@import "../Base/extends";
+@import "../Base/mixins";
+@import "../Base/listas";
+@import "../Base/variables";
+
+/* Footer */
+
+footer {
+    background-color: nth($colores, 10);
+    margin-top: 10rem;
+
+    .footer__ul {
+        margin: 0 10px;
+        list-style: none;
+
+        .footer__img {
+            margin-top: 1rem;
+            margin-right: 1rem;
+            width: $size-h2;
+
+            @include movile {
+                width: 1.5rem;
+            }
+        }
+    }
+
+    .footer__p {
+        @extend %display-flex;
+        color: nth($colores, 2);
+
+        @include movile {
+            font-size: x-small;
+        }
+    }
+}

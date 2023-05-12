@@ -1,0 +1,25 @@
+@import "Base/media-queris";
+@import "Component/Header";
+@import "Component/Nosotros";
+@import "Component/Servicios";
+@import "Component/Contacto";
+@import "Component/Footer";
+@import "Component/pages";
+@import "Base/extends";
+@import "Base/listas";
+@import "Base/mixins";
+@import "Base/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#pagesfix{
+    footer{
+        margin-top: 45%;
+    }
+}
+body{
+    background-color: $bg-general;
+}

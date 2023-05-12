@@ -44,7 +44,7 @@ body {
 
 @media (max-width: 478px){
     .home__h1 {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 
@@ -239,11 +239,7 @@ body {
 .servicios__ul li{
     font-size: 1.3rem;
     margin-top: 1rem;
-}
-
-.servicios__h3 a:hover{
-    
-}
+} 
 
 .servicios__p {
     font-size: 150%;
@@ -308,7 +304,7 @@ body {
     border: 2px solid black;
 }
 
-.contacto__h1 {
+.contacto__h2 {
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
@@ -317,7 +313,7 @@ body {
 }
 
 /* Estilo de Footer */
-.footer {
+footer {
     background-color: #2a2a2a;
     margin-top: 10rem;
     

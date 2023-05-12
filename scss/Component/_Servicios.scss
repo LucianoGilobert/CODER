@@ -1,0 +1,137 @@
+@import "../Base/extends";
+@import "../Base/mixins";
+@import "../Base/listas";
+@import "../Base/variables";
+
+/* Servicios */
+
+.servicios__h2__container {
+    width: 75rem;
+    margin: 0 auto;
+    max-width: 90%;
+
+    .servicios__h2 {
+        padding: 1.5rem;
+        border-top: 0.1rem solid nth($colores, 5);
+        border-bottom: 0.1rem solid nth($colores, 5);
+        @extend %display-flex;
+        font-size: $size-h2;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+
+        @include movile {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.servicios__container {
+    @include display-grid ((6,5% 37% 5% 5% 37% 5%), (11,25rem 10rem 25rem 10rem 25rem 10rem 25rem 10rem 25rem 10rem 25rem));
+    height: 210rem;
+
+    .servicios__item1 {
+        @extend %grid-column-2-3;
+    }
+
+    .servicios__item2 {
+        grid-row: 3;
+        @extend %grid-column-5-6;
+    }
+
+    .servicios__item3 {
+        grid-row: 5;
+        @extend %grid-column-2-3;
+    }
+
+    .servicios__item4 {
+        grid-row: 7;
+        @extend %grid-column-5-6;
+    }
+
+    .servicios__item5 {
+        grid-row: 9;
+        @extend %grid-column-2-3;
+    }
+
+    .servicios__item6 {
+        grid-row: 11;
+        @extend %grid-column-5-6;
+    }
+
+    .servicios__item1, .servicios__item2, .servicios__item3, .servicios__item4, .servicios__item5, .servicios__item6 {
+        @include display-grid ((2,1fr), (3,1fr));
+        border: 0.6rem groove nth($colores, 6);
+        box-shadow: 0.5rem 0.5rem 0.5rem nth($colores, 5);
+
+        .servicios__img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+            grid-row: 1/4;
+            grid-column: 1/2;
+
+            @include tablet {
+                object-fit:fill;
+            }
+        }
+
+        .servicios__h3 {
+            margin: 0.7rem;
+            border: 0.5rem solid nth($colores, 7);
+            box-shadow: 0.3rem 0.3rem nth($colores, 8);
+            @extend %display-flex;
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: nth($colores, 1);
+
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .servicios__ul {
+            grid-row: 2/4;
+            @include display-flex (center, flex-start);
+            flex-direction: column;
+            text-align: start;
+
+            li {
+                font-size: 1.3rem;
+                margin-top: 1rem;
+
+                @include movile {
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        @include tablet-xl {
+            width: 35rem;
+            margin: 5rem;
+        }
+
+        @include tablet {
+            width: 25rem;
+            margin: 5rem;
+        }
+
+        @include movile {
+            width: 20rem;
+            height: 23rem;
+            margin: 2rem;
+        }
+    }
+
+    @include tablet-xl {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../Base/extends";
+@import "../Base/mixins";
+@import "../Base/listas";
+
+/* Header */
+
+.header {
+    @include display-flex (space-between, center);
+    position: fixed;
+    width: 100%;
+
+    .header__container {
+        @extend %display-flex;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-left: 1rem;
+            text-transform: uppercase;
+            color: nth($colores, 1);
+        }
+
+        .header__img {
+            height: 2.5rem;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        @include movile {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include tablet {
+        margin-top: 1.5rem;
+    }
+}
+
+.home{
+    background-image: url(../Media/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45rem;
+    @extend %display-flex;
+
+    .phrase {
+        font-size: 2rem;
+        text-align: center;
+        color: nth($colores, 2);
+        font-family: 'Delicious Handrawn', cursive;
+
+       @include tablet {
+            font-size: 1.5rem;
+       }
+    }
+}
