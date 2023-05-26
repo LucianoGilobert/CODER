@@ -7,7 +7,6 @@
 
 footer {
     background-color: nth($colores, 10);
-    margin-top: 10rem;
 
     .footer__ul {
         margin: 0 10px;
@@ -29,6 +28,7 @@ footer {
         color: nth($colores, 2);
 
         @include movile {
+            margin-top: 2rem;
             font-size: x-small;
         }
     }

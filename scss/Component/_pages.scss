@@ -37,7 +37,9 @@
 .pages {
     @extend %display-flex;
     flex-direction: column;
-    height: 10rem;
+    height: 50rem;
+    margin-top: -20rem;
+    margin-bottom: -20rem;
 
     .slide {
         margin-top: 10rem;
@@ -60,5 +62,15 @@
         padding-left: 30%;
         text-align: start;
         list-style: decimal;
+    }
+
+    @include tablet{
+        margin-bottom: 0rem;
+    }
+    
+
+    @include movile{
+        margin-top: -10rem;
+        margin-bottom: 0;
     }
 }

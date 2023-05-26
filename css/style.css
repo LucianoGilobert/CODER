@@ -83,7 +83,7 @@
 .nosotros {
   margin-top: 10rem;
   height: 15rem;
-  background-image: url(../Media/dos-abogados.jpg);
+  background-image: url(../../Media/dos-abogados.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -312,7 +312,6 @@
 /* Footer */
 footer {
   background-color: #2a2a2a;
-  margin-top: 10rem;
 }
 footer .footer__ul {
   margin: 0 10px;
@@ -333,6 +332,7 @@ footer .footer__p {
 }
 @media screen and (max-width: 478px) {
   footer .footer__p {
+    margin-top: 2rem;
     font-size: x-small;
   }
 }
@@ -381,7 +381,9 @@ footer .footer__p {
 
 .pages {
   flex-direction: column;
-  height: 10rem;
+  height: 50rem;
+  margin-top: -20rem;
+  margin-bottom: -20rem;
 }
 .pages .slide {
   margin-top: 10rem;
@@ -401,6 +403,17 @@ footer .footer__p {
   padding-left: 30%;
   text-align: start;
   list-style: decimal;
+}
+@media screen and (max-width: 768px) {
+  .pages {
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 478px) {
+  .pages {
+    margin-top: -10rem;
+    margin-bottom: 0;
+  }
 }
 
 .header .header__container, .home, .nosotros, .nosotros__main, .servicios__h2__container .servicios__h2, .servicios__container .servicios__item1 .servicios__h3, .servicios__container .servicios__item2 .servicios__h3, .servicios__container .servicios__item3 .servicios__h3, .servicios__container .servicios__item4 .servicios__h3, .servicios__container .servicios__item5 .servicios__h3, .servicios__container .servicios__item6 .servicios__h3, .contacto .contacto__h2, .contacto .contacto__map__container, footer .footer__p, .header__pages .header__container, .pages {
